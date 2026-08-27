@@ -19,8 +19,8 @@ const products = [
       bn: "উজ্জ্বল রং, মাটির মতো সুগন্ধ",
       hi: "चमकीला रंग, मिट्टी जैसी सुगंध",
     },
-    size: "25 g",
-    unitPrice: 5,
+    size: "40 g",
+    unitPrice: 8,
     image: "turmeric-25g.png",
   },
   {
