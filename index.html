@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jit Fresh Masala — freshly ground, carefully packed Indian masalas."
+    />
+    <title>Jit Fresh Masala</title>
+    <link rel="icon" href="assets/jit-fresh-masala-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span data-i18n="announcementFresh">Freshly ground in small batches</span>
+      <b aria-hidden="true">•</b>
+      <span data-i18n="announcementSelected"
+        >Made with carefully selected spices</span
+      >
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Jit Fresh Masala home">
+        <img src="assets/jit-fresh-masala-logo.png" alt="Jit Fresh Masala" />
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home" data-i18n="home">Home</a>
+        <div class="nav-dropdown">
+          <button id="masalaToggle" type="button" aria-expanded="false">
+            <span data-i18n="ourMasala">Our Masala</span> <span>⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#products">
+              <strong data-i18n="regularMasala">Regular Masala</strong>
+              <small data-i18n="regularHint">Individual fresh packs</small>
+            </a>
+            <a href="#combos">
+              <strong data-i18n="comboProducts">Combo Products</strong>
+              <small data-i18n="comboHint">Festive value packs</small>
+            </a>
+          </div>
+        </div>
+        <a href="#about" data-i18n="about">About</a>
+        <a href="#certificates" data-i18n="certificates">Certificates</a>
+        <a href="#reviews" data-i18n="reviews">Reviews</a>
+      </nav>
+
+      <form class="header-search" id="searchForm" role="search">
+        <span aria-hidden="true">⌕</span>
+        <label class="sr-only" for="productSearch" data-i18n="searchProducts"
+          >Search products</label
+        >
+        <input
+          id="productSearch"
+          type="search"
+          placeholder="Search masala"
+          data-i18n-placeholder="searchMasala"
+          autocomplete="off"
+        />
+        <button
+          class="search-submit"
+          type="submit"
+          aria-label="Show search results"
+        >
+          →
+        </button>
+      </form>
+
+      <a
+        class="button button-primary header-cta regular-order-link"
+        href="#"
+        data-i18n="orderNow"
+        >Order Now</a
+      >
+      <button
+        class="search-toggle"
+        id="searchToggle"
+        type="button"
+        aria-label="Open search"
+      >
+        ⌕
+      </button>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span></span
+            ><b data-i18n="authentic">Authentic flavour, every day</b>
+          </p>
+          <h1>
+            <span data-i18n="pureSpices">Pure spices.</span><br /><em
+              data-i18n="honestFlavour"
+              >Honest flavour.</em
+            >
+          </h1>
+          <p data-i18n="heroDescription">
+            Traditional care meets everyday convenience. Our masalas are freshly
+            ground in small batches for the aroma, colour and taste your cooking
+            deserves.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="#products"
+              data-i18n="exploreMasalas"
+              >Explore Masalas</a
+            >
+            <a
+              class="button button-ghost regular-order-link"
+              href="#"
+              data-i18n="orderViaForm"
+              >Order via Google Form</a
+            >
+          </div>
+          <div class="hero-proof">
+            <span
+              ><strong>100%</strong
+              ><small data-i18n="carefullySelected"
+                >carefully selected</small
+              ></span
+            >
+            <span
+              ><strong>Small</strong
+              ><small data-i18n="smallBatchGround">batch ground</small></span
+            >
+            <span
+              ><strong>Sealed</strong
+              ><small data-i18n="sealedFresh">for freshness</small></span
+            >
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Jit Fresh Masala products">
+          <div class="sun-mark"></div>
+          <img
+            class="hero-product main-product"
+            src="assets/products/turmeric-25g.png"
+            alt="Jit Turmeric Powder 25 g"
+          />
+          <img
+            class="hero-product small-product"
+            src="assets/products/chilli-25g.png"
+            alt="Jit Red Chilli Powder 25 g"
+          />
+          <div class="fresh-badge">
+            ☘<span>Freshly<br />ground</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="promise-strip" aria-label="Our product promises">
+        <div>
+          <span class="promise-icon">☘</span
+          ><span
+            ><strong data-i18n="freshIngredients">Fresh Ingredients</strong
+            ><small data-i18n="carefullySourced">Carefully sourced</small></span
+          >
+        </div>
+        <div>
+          <span class="promise-icon">♨</span
+          ><span
+            ><strong data-i18n="smallBatch">Small Batch</strong
+            ><small data-i18n="groundWithCare">Ground with care</small></span
+          >
+        </div>
+        <div>
+          <span class="promise-icon">✓</span
+          ><span
+            ><strong data-i18n="cleanHygienic">Clean &amp; Hygienic</strong
+            ><small data-i18n="safelyPacked">Safely packed</small></span
+          >
+        </div>
+        <div>
+          <span class="promise-icon">✦</span
+          ><span
+            ><strong data-i18n="fullAroma">Full Aroma</strong
+            ><small data-i18n="madeForFlavour">Made for flavour</small></span
+          >
+        </div>
+      </section>
+
+      <section class="products-section section-shell" id="products">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">
+              <span></span><b data-i18n="collection">Our collection</b>
+            </p>
+            <h2>
+              <span data-i18n="everydayMasalas">Everyday masalas,</span
+              ><br /><em data-i18n="madeBetter">made better.</em>
+            </h2>
+          </div>
+          <p data-i18n="productIntro">
+            Choose a masala, select UPI / QR or Cash on Delivery, and place your
+            order through a simple Google Form.
+          </p>
+        </div>
+        <div class="search-summary" id="searchSummary" hidden></div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="no-results" id="noResults" hidden>
+          <h3 data-i18n="noMasala">No masala found</h3>
+          <p data-i18n="trySearch">
+            Try turmeric, chilli, coriander, cumin, হলুদ, লঙ্কা, ধনে or জিরা.
+          </p>
+          <button
+            class="button button-ghost"
+            id="showAllButton"
+            type="button"
+            data-i18n="showAll"
+          >
+            Show all masalas
+          </button>
+        </div>
+        <div class="availability-notes">
+          <div class="cod-note">
+            <span>₹</span>
+            <p>
+              <strong data-i18n="codAvailable"
+                >Cash on Delivery Available</strong
+              ><small data-i18n="codHint"
+                >Choose Cash on Delivery while submitting the order form.</small
+              >
+            </p>
+          </div>
+          <div class="more-note">
+            <span>✦</span>
+            <p data-i18n="moreSoon">
+              More varieties of masala will be added soon.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="combo-section" id="combos">
+        <div class="section-shell">
+          <div class="section-intro combo-intro">
+            <div>
+              <p class="eyebrow">
+                <span></span><b data-i18n="festiveSavings">Festive savings</b>
+              </p>
+              <h2>
+                <span data-i18n="durgaOffers">Durga Puja offers,</span><br /><em
+                  data-i18n="everyKitchen"
+                  >made for every kitchen.</em
+                >
+              </h2>
+            </div>
+            <p data-i18n="comboIntro">
+              Choose a festive combo, enjoy the included free packet, and order
+              through the dedicated combo Google Form.
+            </p>
+          </div>
+          <div class="combo-grid" id="comboGrid"></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-shell about-grid">
+          <div class="about-visual">
+            <img
+              src="assets/products/coriander-25g.png"
+              alt="Freshly packed Jit Coriander Powder"
+            />
+            <div class="story-stamp">
+              <span data-i18n="madeWith">Made with</span
+              ><strong data-i18n="care">care</strong
+              ><span data-i18n="everyBatch">in every batch</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">
+              <span></span><b data-i18n="ourStory">Our story</b>
+            </p>
+            <h2>
+              <span data-i18n="fromKitchen">From our kitchen</span><br /><em
+                data-i18n="toYours"
+                >to yours.</em
+              >
+            </h2>
+            <p class="lead" data-i18n="aboutLead">
+              Jit Fresh Masala began with one simple belief: everyday food
+              deserves honest, aromatic spices.
+            </p>
+            <p data-i18n="aboutBody">
+              We select raw spices carefully, clean them thoroughly and grind
+              them in small batches. Each pack is sealed to protect its natural
+              aroma and prepared with care.
+            </p>
+            <div class="story-stats">
+              <div>
+                <strong>01</strong
+                ><span data-i18n="carefulSourcing">Careful sourcing</span>
+              </div>
+              <div>
+                <strong>02</strong
+                ><span data-i18n="freshGrinding">Fresh grinding</span>
+              </div>
+              <div>
+                <strong>03</strong
+                ><span data-i18n="hygienicPacking">Hygienic packing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cert-section section-shell" id="certificates">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">
+              <span></span><b data-i18n="trust">Trust &amp; transparency</b>
+            </p>
+            <h2>
+              <span data-i18n="businessDetails">Business details you</span
+              ><br /><em data-i18n="canVerify">can verify.</em>
+            </h2>
+          </div>
+          <p data-i18n="certIntro">
+            Display your official registrations here so customers can buy with
+            confidence.
+          </p>
+        </div>
+        <div class="certificate-grid">
+          <article class="certificate-card">
+            <span class="certificate-icon">✓</span>
+            <div>
+              <b>FSSAI</b>
+              <h3>Food Safety Registration</h3>
+              <p data-i18n="certCopy">Certificate copy can be added here</p>
+            </div>
+          </article>
+          <article class="certificate-card">
+            <span class="certificate-icon">◆</span>
+            <div>
+              <b>MSME</b>
+              <h3>Udyam / MSME Certificate</h3>
+              <p data-i18n="certCopy">Certificate copy can be added here</p>
+            </div>
+          </article>
+        </div>
+        <p class="certificate-note" data-i18n="certNote">
+          Add the business's original FSSAI and Udyam / MSME certificate images
+          or PDF links here.
+        </p>
+      </section>
+
+      <section class="review-section" id="reviews">
+        <div class="section-shell">
+          <div class="section-intro">
+            <div>
+              <p class="eyebrow">
+                <span></span
+                ><b data-i18n="customerFeedback">Customer feedback</b>
+              </p>
+              <h2>
+                <span data-i18n="reviewsBuild">Reviews that build</span
+                ><br /><em data-i18n="realTrust">real trust.</em>
+              </h2>
+            </div>
+            <p data-i18n="reviewsIntro">
+              This section is ready for genuine customer feedback. Add verified
+              reviews as they are received.
+            </p>
+          </div>
+          <div class="testimonial-shell">
+            <div class="testimonial-toolbar">
+              <strong id="testimonialCount">01 / 03</strong>
+              <div>
+                <button
+                  id="reviewPrev"
+                  type="button"
+                  aria-label="Previous review"
+                >
+                  ←</button
+                ><button id="reviewNext" type="button" aria-label="Next review">
+                  →
+                </button>
+              </div>
+            </div>
+            <div class="testimonial-viewport">
+              <div class="testimonial-track" id="testimonialTrack"></div>
+            </div>
+            <div class="testimonial-footer">
+              <div class="slider-dots" id="sliderDots"></div>
+              <p data-i18n="replaceFeedback">
+                Replace placeholders with genuine customer feedback.
+              </p>
+              <a
+                class="button button-primary"
+                href="https://g.page/r/CbVcd73wLHVtEAE/review"
+                target="_blank"
+                rel="noopener"
+                data-i18n="writeReview"
+                >Write a Review</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section section-shell">
+        <div class="order-panel">
+          <div>
+            <p class="eyebrow light">
+              <span></span><b data-i18n="simpleOrdering">Simple ordering</b>
+            </p>
+            <h2>
+              <span data-i18n="readyBring">Ready to bring fresh</span><br /><em
+                data-i18n="flavourHome"
+                >flavour home?</em
+              >
+            </h2>
+            <p data-i18n="orderIntro">
+              Select your products, choose UPI / QR or Cash on Delivery, then
+              submit the Google Form.
+            </p>
+          </div>
+          <div class="order-steps">
+            <div>
+              <span>1</span>
+              <p>
+                <strong data-i18n="choose">Choose</strong
+                ><small data-i18n="yourMasala">Your masala</small>
+              </p>
+            </div>
+            <div>
+              <span>2</span>
+              <p>
+                <strong data-i18n="payment">Payment</strong
+                ><small data-i18n="upiQrCod">UPI / QR or COD</small>
+              </p>
+            </div>
+            <div>
+              <span>3</span>
+              <p>
+                <strong data-i18n="submit">Submit</strong
+                ><small data-i18n="orderForm">Order form</small>
+              </p>
+            </div>
+          </div>
+          <a
+            class="button button-cream regular-order-link"
+            href="#"
+            data-i18n="placeOrder"
+            >Place Your Order</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer-main section-shell">
+        <div class="footer-brand">
+          <img src="assets/jit-fresh-masala-logo.png" alt="Jit Fresh Masala" />
+          <p data-i18n="footerDescription">
+            Freshly ground masalas, prepared with care for everyday Indian
+            kitchens.
+          </p>
+        </div>
+        <div>
+          <h3 data-i18n="quickLinks">Quick Links</h3>
+          <a href="#products" data-i18n="ourMasala">Our Masala</a
+          ><a href="#combos" data-i18n="comboProducts">Combo Products</a
+          ><a href="#about" data-i18n="about">About</a
+          ><a href="#reviews" data-i18n="reviews">Reviews</a>
+        </div>
+        <div>
+          <h3 data-i18n="customerHelp">Customer Help</h3>
+          <a class="regular-order-link" href="#" data-i18n="regularOrderForm"
+            >Regular Order Form</a
+          ><a class="combo-order-link" href="#" data-i18n="comboOrderForm"
+            >Combo Order Form</a
+          ><button id="customPayButton" type="button">UPI / Payment QR</button
+          ><a href="mailto: jit79738@gmail.com" data-i18n="emailUs">Email Us</a>
+        </div>
+        <div>
+          <h3 data-i18n="businessContact">Business Contact</h3>
+          <p data-i18n="phonePlaceholder">Phone: +91 7407363599</p>
+          <p data-i18n="emailPlaceholder">Email: jitm79738@gmail.com</p>
+          <p data-i18n="addressPlaceholder">
+            Address: Taltala 05 No Ward, Kalyani, Nadia, 741235, West Bengal
+          </p>
+        </div>
+        <div class="footer-location">
+          <h3 data-i18n="businessLocation">Business Location</h3>
+          <div class="mini-map">
+            <iframe
+              title="Jit Fresh Masala location map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9637622612636!2d88.4329198!3d22.988360000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89522fd79a6cf%3A0x6d752cf0bd775cb5!2sJit%20Fresh%20Masala!5e0!3m2!1sen!2sin!4v1787816601085!5m2!1sen!2sin"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <p>Kalyani, Nadia, West Bengal</p>
+          <a
+            class="map-link"
+            href="https://www.google.com/maps/search/?api=1&query=Jit%20Fresh%20Masala"
+            target="_blank"
+            rel="noopener"
+            ><span data-i18n="openMaps">Open in Google Maps</span> →</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom section-shell">
+        <span>© 2026 Jit Fresh Masala. All rights reserved.</span>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">f</a
+          ><a href="#" aria-label="Instagram">◎</a
+          ><a href="#" aria-label="YouTube">▶</a>
+        </div>
+        <span>Pure taste • Fresh aroma • Honest quality</span>
+      </div>
+    </footer>
+
+    <label class="floating-language">
+      <span aria-hidden="true">🌐</span>
+      <select id="languageSelect" aria-label="Choose website language">
+        <option value="en">English</option>
+        <option value="bn">বাংলা</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+    </label>
+
+    <a
+      class="floating-whatsapp"
+      id="whatsappButton"
+      href="#"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path
+          d="M16 4.2a11.5 11.5 0 0 0-9.9 17.3L4.4 27.8l6.4-1.7A11.5 11.5 0 1 0 16 4.2Zm0 20.8c-1.7 0-3.3-.5-4.7-1.3l-.4-.2-3.8 1 1-3.7-.2-.4A9.3 9.3 0 1 1 16 25Zm5.1-7c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.6l-.9-2.1c-.2-.6-.5-.5-.7-.5H12c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.2s1.4 3.7 1.5 4c.2.3 2.7 4.1 6.5 5.7.9.4 1.6.6 2.2.7.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.6-.4Z"
+        />
+      </svg>
+    </a>
+
+    <div class="modal-backdrop" id="paymentModal" hidden>
+      <section
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="paymentTitle"
+      >
+        <button
+          class="modal-close"
+          id="modalClose"
+          type="button"
+          aria-label="Close"
+        >
+          ×
+        </button>
+        <p class="eyebrow">
+          <span></span><b data-i18n="directPayment">Direct UPI payment</b>
+        </p>
+        <h2 id="paymentTitle">
+          <span data-i18n="payFor">Pay for</span><br /><em id="paymentProduct"
+            >Order</em
+          >
+        </h2>
+        <label class="amount-field" id="customAmountField" hidden
+          ><span data-i18n="enterAmount">Enter payment amount</span
+          ><span
+            ><b>₹</b
+            ><input
+              id="customAmount"
+              type="number"
+              min="1"
+              step="1"
+              inputmode="decimal" /></span
+        ></label>
+        <div class="payment-summary">
+          <span data-i18n="amountToPay">Amount to pay</span
+          ><strong id="paymentAmount">₹0.00</strong>
+        </div>
+        <div class="qr-wrap">
+          <canvas id="paymentQr" width="220" height="220"></canvas>
+        </div>
+        <p class="qr-caption" data-i18n="scanUpi">Scan with any UPI app</p>
+        <a class="button button-primary full-button" id="upiPayLink" href="#"
+          ><span data-i18n="pay">Pay</span>
+          <span id="upiButtonAmount">₹0.00</span>
+          <span data-i18n="payWithUpi">with UPI App</span></a
+        >
+        <div class="upi-row">
+          <span
+            ><small>UPI ID</small><strong>mondaljoy7407-2@oksbi</strong></span
+          ><button id="copyUpiButton" type="button" data-i18n="copy">
+            Copy
+          </button>
+        </div>
+        <p class="payment-safety" data-i18n="upiSafety">
+          Check the receiver name and amount shown in your UPI app before
+          paying. Never share your UPI PIN or OTP.
+        </p>
+        <div class="cod-choice">
+          <span>₹</span>
+          <p>
+            <strong data-i18n="codAvailable">Cash on Delivery Available</strong
+            ><small data-i18n="codModalHint"
+              >No online payment is needed. Select Cash on Delivery in the order
+              form.</small
+            >
+          </p>
+        </div>
+        <a
+          class="button button-cod full-button"
+          id="codOrderLink"
+          href="#"
+          data-i18n="codButton"
+          >Choose Cash on Delivery</a
+        >
+        <a
+          class="button button-ghost full-button"
+          id="continueOrderLink"
+          href="#"
+          ><span data-i18n="continueTo">Continue to</span>
+          <span id="formTypeLabel">Regular</span>
+          <span data-i18n="orderForm">Order form</span></a
+        >
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
