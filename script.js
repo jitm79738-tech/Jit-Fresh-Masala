@@ -21,7 +21,7 @@ const products = [
     },
     size: "25 g",
     unitPrice: 5,
-    image: "assets/products/turmeric-25g.png",
+    image: "turmeric-25g.png",
   },
   {
     id: "chilli",
@@ -37,7 +37,7 @@ const products = [
     },
     size: "25 g",
     unitPrice: 9,
-    image: "assets/products/chilli-25g.png",
+    image: "chilli-25g.png",
   },
   {
     id: "coriander",
@@ -49,7 +49,7 @@ const products = [
     },
     size: "25 g",
     unitPrice: 8,
-    image: "assets/products/coriander-25g.png",
+    image: "coriander-25g.png",
   },
   {
     id: "cumin",
@@ -61,7 +61,7 @@ const products = [
     },
     size: "25 g",
     unitPrice: 10,
-    image: "assets/products/cumin-25g.png",
+    image: "cumin-25g.png",
   },
 ];
 
@@ -668,7 +668,7 @@ function renderCombos() {
       return `
       <article class="combo-card">
         <div class="${galleryClass}">
-          ${combo.images.map((image, index) => `<img src="assets/products/${image}" alt="${escapeHtml(combo.name[language])} product ${index + 1}" loading="lazy" />`).join("")}
+          ${combo.images.map((image, index) => `<img src="${image}" alt="${escapeHtml(combo.name[language])} product ${index + 1}" loading="lazy" />`).join("")}
         </div>
         <div class="combo-body">
           <span class="combo-label">${t("festiveOffer")}</span>
