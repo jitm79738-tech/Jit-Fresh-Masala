@@ -200,6 +200,7 @@ const translations = {
   en: {
     announcementFresh: "Freshly ground in small batches",
     announcementSelected: "Made with carefully selected spices",
+    announcement: "Wholesale rates apply. Minimum order quantity: 200 g.",
     home: "Home",
     ourMasala: "Our Masala",
     regularMasala: "Regular Masala",
@@ -328,6 +329,7 @@ const translations = {
   bn: {
     announcementFresh: "ছোট ব্যাচে সদ্য গুঁড়ো করা",
     announcementSelected: "বাছাই করা মসলা দিয়ে তৈরি",
+    announcement: "পাইকারি মূল্যে সর্বনিম্ন অর্ডারের পরিমাণ ২০০ গ্রাম।",
     home: "হোম",
     ourMasala: "আমাদের মসলা",
     regularMasala: "রেগুলার মসলা",
@@ -453,6 +455,7 @@ const translations = {
   hi: {
     announcementFresh: "छोटे बैच में ताज़ा पिसा",
     announcementSelected: "चुने हुए मसालों से बनाया गया",
+    announcement: "थोक मूल्य पर न्यूनतम ऑर्डर की मात्रा 200 ग्राम है।",
     home: "होम",
     ourMasala: "हमारे मसाले",
     regularMasala: "रेगुलर मसाला",
