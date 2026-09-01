@@ -1639,3 +1639,22 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+@media (max-width: 560px) {
+  .announcement {
+    min-height: 34px;
+    padding: 7px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .announcement span {
+    display: inline-block !important;
+    font-size: 0.65rem;
+    line-height: 1.4;
+    text-align: center;
+    white-space: normal;
+  }
+}
