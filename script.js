@@ -63,6 +63,18 @@ const products = [
     unitPrice: 10,
     image: "cumin-25g.png",
   },
+    {
+    id: "garam",
+    name: { en: "Garam Masala", bn: "গরম মসালা", hi: "गरम मसाला" },
+    subtitle: {
+      en: "Warm, aromatic blend",
+      bn: "উষ্ণ, সুগন্ধিত মিশ্রণ",
+      hi: "गर्म, सुगंधित मिश्रण",
+    },
+    size: "100 g",
+    unitPrice: 100,
+    image: "assets/products/garam-100g.png",
+  },
 ];
 
 const combos = [
@@ -198,9 +210,7 @@ const testimonials = [
 
 const translations = {
   en: {
-    announcementFresh: "Freshly ground in small batches",
-    announcementSelected: "Made with carefully selected spices",
-    announcement: "Wholesale rates apply. Minimum order quantity: 200 g.",
+    announcementFresh: "You must buy a minimum of one dozen",
     home: "Home",
     ourMasala: "Our Masala",
     regularMasala: "Regular Masala",
@@ -327,9 +337,7 @@ const translations = {
     whatsappMissing: "Add the business WhatsApp number in script.js first.",
   },
   bn: {
-    announcementFresh: "ছোট ব্যাচে সদ্য গুঁড়ো করা",
-    announcementSelected: "বাছাই করা মসলা দিয়ে তৈরি",
-    announcement: "পাইকারি মূল্যে সর্বনিম্ন অর্ডারের পরিমাণ ২০০ গ্রাম।",
+    announcementFresh: "আপনাকে অবশ্যই ন্যূনতম এক ডজন কিনতে হবে",
     home: "হোম",
     ourMasala: "আমাদের মসলা",
     regularMasala: "রেগুলার মসলা",
@@ -453,9 +461,7 @@ const translations = {
     whatsappMissing: "প্রথমে script.js-এ ব্যবসার WhatsApp নম্বর যোগ করুন।",
   },
   hi: {
-    announcementFresh: "छोटे बैच में ताज़ा पिसा",
-    announcementSelected: "चुने हुए मसालों से बनाया गया",
-    announcement: "थोक मूल्य पर न्यूनतम ऑर्डर की मात्रा 200 ग्राम है।",
+    announcementFresh: "आपको कम से कम एक दर्जन खरीदना होगा",
     home: "होम",
     ourMasala: "हमारे मसाले",
     regularMasala: "रेगुलर मसाला",
