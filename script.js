@@ -71,9 +71,9 @@ const products = [
       bn: "উষ্ণ, সুগন্ধিত মিশ্রণ",
       hi: "गर्म, सुगंधित मिश्रण",
     },
-    size: "100 g",
-    unitPrice: 100,
-    image: "garam-100g.png",
+    size: "50 g",
+    unitPrice: 40,
+    image: "garam-50g.png",
   },
 ];
 
