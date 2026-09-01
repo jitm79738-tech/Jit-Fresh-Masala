@@ -991,6 +991,62 @@ $$('.social-icons a[href="#"]').forEach((link) =>
   link.addEventListener("click", (event) => event.preventDefault()),
 );
 
+const minimumOrderPopup = document.querySelector(
+  "#minimumOrderPopup"
+);
+
+const minimumOrderClose = document.querySelector(
+  "#minimumOrderClose"
+);
+
+const minimumOrderButton = document.querySelector(
+  "#minimumOrderButton"
+);
+
+function openMinimumOrderPopup() {
+  minimumOrderPopup.classList.add("show");
+  minimumOrderPopup.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeMinimumOrderPopup() {
+  minimumOrderPopup.classList.remove("show");
+  minimumOrderPopup.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+/* Website open হওয়ার 500ms পরে popup দেখাবে */
+
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(openMinimumOrderPopup, 500);
+});
+
+minimumOrderClose.addEventListener(
+  "click",
+  closeMinimumOrderPopup
+);
+
+minimumOrderButton.addEventListener(
+  "click",
+  closeMinimumOrderPopup
+);
+
+/* Popup-এর বাইরে click করলে close হবে */
+
+minimumOrderPopup.addEventListener("click", (event) => {
+  if (event.target === minimumOrderPopup) {
+    closeMinimumOrderPopup();
+  }
+});
+
+/* Escape button দিয়ে close হবে */
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMinimumOrderPopup();
+  }
+});
+
 setOrderLinks();
 applyLanguage(language);
 restartReviewTimer();
