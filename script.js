@@ -73,7 +73,7 @@ const products = [
     },
     size: "100 g",
     unitPrice: 100,
-    image: "assets/products/garam-100g.png",
+    image: "garam-100g.png",
   },
 ];
 
