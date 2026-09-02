@@ -1015,7 +1015,6 @@ function closeMinimumOrderPopup() {
   document.body.style.overflow = "";
 }
 
-/* Website open হওয়ার 500ms পরে popup দেখাবে */
 
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(openMinimumOrderPopup, 500);
@@ -1031,7 +1030,7 @@ minimumOrderButton.addEventListener(
   closeMinimumOrderPopup
 );
 
-/* Popup-এর বাইরে click করলে close হবে */
+
 
 minimumOrderPopup.addEventListener("click", (event) => {
   if (event.target === minimumOrderPopup) {
@@ -1039,7 +1038,7 @@ minimumOrderPopup.addEventListener("click", (event) => {
   }
 });
 
-/* Escape button দিয়ে close হবে */
+
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
